@@ -11,7 +11,8 @@
  *   CONTRACT_ADDRESS=0x...
  */
 
-import { ethers } from 'hardhat';
+import pkg from "hardhat";
+const { ethers } = pkg;
 
 async function main() {
   const [deployer] = await ethers.getSigners();

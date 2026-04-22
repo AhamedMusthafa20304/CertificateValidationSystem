@@ -140,6 +140,10 @@ console.log('⏳ Waiting for Sepolia confirmation…', tx.hash);
 
 const receipt = await tx.wait();
 
+console.log('✅ On-chain tx confirmed:', receipt.hash);
+      console.log('⏳ Waiting for Sepolia confirmation…', tx.hash);
+      const receipt = await tx.wait(1); // 1 confirmation
+
       // ── Phase 3: Record tx hash in MySQL ────────────────────────────────────
       await api(`/certificates/${encodeURIComponent(savedCert.certificateHash)}/tx`, {
         method: 'PATCH',

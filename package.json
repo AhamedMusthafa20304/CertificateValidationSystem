@@ -27,6 +27,7 @@
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^5.4.624",
     "pdfkit": "^0.17.2",
+    "pg": "^8.20.0",
     "qrcode": "1.5.3",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
@@ -35,6 +36,7 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@types/node": "^22.14.0",
+    "@types/pg": "^8.20.0",
     "@types/qrcode": "^1.5.5",
     "@vitejs/plugin-react": "^5.0.0",
     "hardhat": "^2.22.0",
