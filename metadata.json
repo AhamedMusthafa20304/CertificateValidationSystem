@@ -1,0 +1,7 @@
+{
+  "name": "CertiVerifier - Blockchain Project",
+  "description": "A decentralized application (DApp) prototype for issuing, verifying, and viewing student certificates using a simulated blockchain environment.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

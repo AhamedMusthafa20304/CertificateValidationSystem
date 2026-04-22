@@ -1,0 +1,44 @@
+{
+  "name": "certiverifier---blockchain-project",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.ts --network sepolia",
+    "deploy:local": "npx hardhat run scripts/deploy.ts --network hardhat",
+    "db:setup": "mysql -u $DB_USER -p$DB_PASSWORD $DB_NAME < database/schema.sql"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/pdfkit": "^0.17.5",
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.0",
+    "express": "^5.2.1",
+    "html5-qrcode": "2.3.8",
+    "lucide-react": "^0.561.0",
+    "mysql2": "^3.11.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^5.4.624",
+    "pdfkit": "^0.17.2",
+    "qrcode": "1.5.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^22.14.0",
+    "@types/qrcode": "^1.5.5",
+    "@vitejs/plugin-react": "^5.0.0",
+    "hardhat": "^2.22.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
